@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8f1db610-bcf5-481d-898e-41a51cf50a82" name="UMLClassDiagram" linkedPackageId="f2d6e8ec-904b-49e5-8592-5c89a982a2a1" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b15083af-e266-4170-8b5e-8089107e61e1" name="SlotMachine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9ef1e3bb-6d2a-496c-bb93-f382d6fcc2d2" />
+        <suppliersInternal>
+          <dependency Id="735a96a2-37c9-4bed-b9a7-f4a6c86d60e3">
+            <interfaceMoniker Id="261e954f-df06-4e7b-b793-07d0e1617a97" LastKnownName="ISlotEngine" />
+            <elementDefinition Id="74ee83b2-4164-4f99-b51f-d24fa60a4283" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="35e3b133-3d08-4369-b47e-3e097f3a743d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="ec594243-991d-44a8-87ca-c78d94a3aebc" LastKnownName="IReel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="092f3723-2c30-431d-b72d-69e80b40d980" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f89f6811-c8ad-42ee-9cc8-dbc62a68bb3d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2ec2329-5fb7-422e-97c0-f0e893dbb57b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="0ea08cf6-f4d6-4f01-a80c-df2edc2309b0" name="Lower" value="N">
+                      <elementDefinition Id="327f342f-079f-47f6-9653-835ae03c49a8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="57cfa72e-03dd-4d1b-bf33-c5c53e9c73eb" name="Upper" value="N">
+                      <elementDefinition Id="82a7b38a-9652-48c3-bb1e-d49837466f88" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3e71d1c6-c329-4368-8140-bd2462263f4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="96577ff4-3e13-4c12-921e-a291a5caa9bc" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a2ec8b7c-5034-4fc2-a3b5-756bd8fe21db" name="Reel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a17b04dc-a35a-4c50-b517-c17b491c0b00" />
+        <suppliersInternal>
+          <interfaceRealization Id="e3675cd1-3456-4f1b-ab92-02ee35660c9c">
+            <interfaceMoniker Id="ec594243-991d-44a8-87ca-c78d94a3aebc" LastKnownName="IReel" />
+            <elementDefinition Id="d35bbbe4-7187-4258-87bc-6dff906c3baa" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6808b3fa-c862-4768-85ce-9e876b915a7e" name="SlotEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5d712d40-80de-48a0-9d9f-ec5745d93341" />
+        <suppliersInternal>
+          <interfaceRealization Id="86bd7105-e1b7-437a-a1b7-bbe0813bd6fb">
+            <interfaceMoniker Id="261e954f-df06-4e7b-b793-07d0e1617a97" LastKnownName="ISlotEngine" />
+            <elementDefinition Id="e5bfbb45-5657-41cb-8808-a29f1e9bbd69" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="73ca9a02-9f70-4252-8e73-e25ccd42442c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5afbe36f-68c0-4d02-9d17-418c6ca0f6dc" LastKnownName="PayMatchAmount" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0c7e9fe-9b84-4e94-a23e-bcb3e6a7019e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3bac8d04-e1bd-46c9-9294-a0cea3f30df7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7cdd0334-b09e-43cb-9103-49910147f04d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="b85149f6-5c54-46b9-a1df-ca70d8a8dcc7" name="Lower" value="N">
+                      <elementDefinition Id="c7a0219c-afa8-4445-823c-475f7b8b82b3" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a0935b1f-43ae-4ae3-82e2-7beeb48bc6ce" name="Upper" value="N">
+                      <elementDefinition Id="477da90d-17ed-40b6-b8b2-7ac441a09475" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b4b2e1ea-a851-4ad9-b0cf-34ad490772f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fb837e66-a500-447a-b18e-79e8110c0df9" />
+          </association>
+          <association Id="a0f7bff4-3775-451f-9f00-ed665d7fd4a9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="0355fe7d-f352-4614-8d53-979c5f5ebbc9" LastKnownName="IPayLine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc41ef67-176b-4a4c-b574-a57ff069f15f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="703cdf1e-6e90-471f-9668-9e9865a71392" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6a7d4d0-b92b-42a0-beb5-6dfc41d8c1b7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="5d1e2595-ea51-40bc-821f-d726eb00803a" name="Lower" value="N">
+                      <elementDefinition Id="29ee0a06-09cd-43ea-853a-7199f61e0578" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="608bd63c-5e18-44f8-803b-788ed4727aeb" name="Upper" value="N">
+                      <elementDefinition Id="605b3962-1b5d-4861-826e-8744c54b30c6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="edc2da67-109b-4c5c-ac8b-161a5d2156fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4985a1e7-f045-4d30-b62c-a678d7764864" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="261e954f-df06-4e7b-b793-07d0e1617a97" name="ISlotEngine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af7e181c-0378-4959-b8b7-5842170a8beb" />
+        <targetEnds>
+          <association Id="bbe555c3-d4ef-46f7-a13a-5ed888625ee3" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="215b7e98-aeb2-4edb-9769-0aa02a1574ca" LastKnownName="SlotSymbolOffset" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77d6e074-e63f-4e69-a433-240890184ca0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2b9155cd-1034-4209-850e-a34973b8cab7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63d47055-c5d9-4400-b880-d62df9d3a4f7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="417969cd-bd35-4268-9eb4-d3f6a56de403" name="Lower" value="N">
+                      <elementDefinition Id="59785ce3-65df-476f-938d-1964969f3d73" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b74cffac-5cc3-4105-ba44-93bc568e29e6" name="Upper" value="N">
+                      <elementDefinition Id="4dd5a22f-8600-4ddb-af9c-1eca8c9ad051" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="adca1a69-1861-4977-b6ce-8c452fcda6e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8be2888f-9a10-4027-852d-5f31b81c81a0" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="ec594243-991d-44a8-87ca-c78d94a3aebc" name="IReel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44c5e622-3e1c-410e-94c1-3b6b78be35ed" />
+        <targetEnds>
+          <association Id="f296d151-b008-4c5c-ab4a-3651668d2a33" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="215b7e98-aeb2-4edb-9769-0aa02a1574ca" LastKnownName="SlotSymbolOffset" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="428e75a2-a6b5-4a35-a9b6-249d1b670400" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1a0e052-6a0a-41c0-8bfd-890ad0551651" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f41d4d2-186b-4412-92ab-a38e0307b495" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ec147f88-bd1e-4424-9e3c-131948c0b35f" name="Lower" value="N">
+                      <elementDefinition Id="77b48479-7f80-4a05-aee6-f10d7148b50d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="81ecd3b3-c42b-4485-9c1a-193d491d93f7" name="Upper" value="N">
+                      <elementDefinition Id="47b0df0d-5ffa-49a7-b639-9b618093864e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="26e49171-02a4-40fe-b843-9734f24b4f4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f0b7dc4-2c22-4d2b-a76a-714ed7203286" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5afbe36f-68c0-4d02-9d17-418c6ca0f6dc" name="PayMatchAmount" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a9ab614-c0ef-4936-ac2c-34a749e26eb7" />
+        <targetEnds>
+          <association Id="e1df9e85-c519-4b64-8337-b9ec20b2ac26" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="e86757b2-7709-4ebe-8ef6-4d927f05cb93" LastKnownName="ESLotSymbol" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e590b888-86b7-4072-a4b2-bd4f0a318816" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a694bb0-b260-46bd-a443-2a87a390d0d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29a392f4-87c4-4a65-b2c0-a6e572693144" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f770d229-7839-42f1-9da7-a280b6b835de" name="Lower" value="N">
+                      <elementDefinition Id="7c25847b-0af7-496a-b398-56aff0005de2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5361a178-3fd0-4807-b8d2-332de7d36b9c" name="Upper" value="N">
+                      <elementDefinition Id="4c7497d3-07a2-4587-9ec9-d9a889b571e8" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0d6b3d42-f960-46e5-9db9-750571472d82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc68f57c-5936-4a90-9d9a-16dfad7f1538" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f686779c-c2a6-47e4-80cd-b8c419760d01" name="PayLine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58a43172-25e3-450d-949c-c749d4ed052f" />
+        <suppliersInternal>
+          <interfaceRealization Id="ae11f953-97c2-4e09-8c8b-cb0d60b16287">
+            <interfaceMoniker Id="0355fe7d-f352-4614-8d53-979c5f5ebbc9" LastKnownName="IPayLine" />
+            <elementDefinition Id="baac9022-1772-477e-b2f8-58850b3cb40f" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="86a9e261-1fd1-48a0-ac56-b57ddc11130a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="215b7e98-aeb2-4edb-9769-0aa02a1574ca" LastKnownName="SlotSymbolOffset" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb1dff33-bfaf-4e98-b5ac-7f84212c27c5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd3a79fb-3d8d-4023-805a-8caa01546bbc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a8cd857-e294-47a8-a95d-6cf01f729ecc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6110e03b-a985-4c51-b833-654279e291a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="295c60c9-f37f-4376-996a-be50f3050adf" />
+          </association>
+          <association Id="fd52de8d-f5e4-44b2-9cad-0ab03a0806fa" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5afbe36f-68c0-4d02-9d17-418c6ca0f6dc" LastKnownName="PayMatchAmount" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f73ca4d-36e1-4e11-ad4e-87421a79ac32" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="da37f5d4-411e-48b2-afe7-d87ae846238b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f37ca40-0bc4-4110-8d4e-fafb129e66c6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0ea58aa1-4c81-4ab9-8c8a-199554c4cd4d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c89473f8-5355-47dc-ba78-63c6793df24a" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="e86757b2-7709-4ebe-8ef6-4d927f05cb93" name="ESLotSymbol" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12a6f9fc-1ee4-48b6-8eef-3f406c448568" />
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="66707063-c959-4498-b0a0-6251e315d614" name="ESLotOffset" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="689ce962-4fdd-4329-a5e6-688bb77bba45" />
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="215b7e98-aeb2-4edb-9769-0aa02a1574ca" name="SlotSymbolOffset" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c528c8fa-e344-4078-b203-849cf566993b" />
+        <suppliersInternal>
+          <dependency Id="03928074-0f74-4051-9a6b-b7f2c7f8f6ed">
+            <enumerationMoniker Id="66707063-c959-4498-b0a0-6251e315d614" LastKnownName="ESLotOffset" />
+            <elementDefinition Id="9f682c25-8f2d-467e-a9e3-6521ece6a49d" />
+          </dependency>
+          <dependency Id="7c8b7e0f-87f6-44c6-9402-106efe93a7e0">
+            <enumerationMoniker Id="e86757b2-7709-4ebe-8ef6-4d927f05cb93" LastKnownName="ESLotSymbol" />
+            <elementDefinition Id="1fb5b147-f3d6-4549-9604-f1b64bc50047" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54b25c9b-e7db-4d68-99be-d16b6182c81a" name="SlotMacxhineRunner" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d499d8ad-7662-4c34-b00b-6a4bb5d30e54" />
+        <targetEnds>
+          <association Id="3c53f55b-d589-4d7e-addb-516935f75286" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b15083af-e266-4170-8b5e-8089107e61e1" LastKnownName="SlotMachine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc3124a0-bd18-4627-b870-169732b6a963" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10180671-679a-4b77-8f27-1290acc63680" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="412ab5bd-9ebb-4d73-86e0-81766b75195e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="961da199-a398-4ebe-850a-8cd62d918517" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a8290412-6c25-49b4-a566-fbf6a3c6ec70" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="0355fe7d-f352-4614-8d53-979c5f5ebbc9" name="IPayLine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1cd9619f-b7c3-43e5-ab42-b5af673f8fb4" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f2d6e8ec-904b-49e5-8592-5c89a982a2a1" name="SlotMachineSimUML">
+    <elementDefinition Id="d9a6a291-4c60-48f3-8845-74dc00eb74fd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="494c4b03-f5e7-462a-9d23-1920075d5a15">
+        <profileInstance Id="8619c6b7-ae31-4757-8366-4e8db8a3185b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="466e7f28-3a52-4ff4-8439-885552cb051f">
+        <profileInstance Id="5b4397bd-cc2b-46dc-95de-a495cb3a3302" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
