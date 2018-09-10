@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,8 @@ namespace SlotMachinesSim2013
 
        protected  virtual void init(string slotMachineConfigFile)
         {
-            XDocument xdoc = XDocument.Load("assessment_game.xml");
+           var filePath = ConfigurationManager.AppSettings["ConfigSlotMachine"];
+           XDocument xdoc = XDocument.Load(filePath);
             var betInfo = int.Parse(xdoc.Descendants("BetInfo").ToArray<XElement>()[0].Attribute("Amount").Value);
             visibleAreaHeight = int.Parse(xdoc.Descendants("VisibleArea").ToArray<XElement>()[0].Attribute("Rows").Value);
             visibleAreaWidth = int.Parse(xdoc.Descendants("VisibleArea").ToArray<XElement>()[0].Attribute("Columns").Value);
@@ -124,9 +126,14 @@ namespace SlotMachinesSim2013
            List<List<ESlotSymbol>> stripList = reelStripList
                                             .Select(r => r.Strip)
                                             .ToList<List<ESlotSymbol>>();
+
+           if(stripList.Count!=3)
+           { throw new Exception("SpinAllCombinations need to be updated if you need to test a slotmachine with the total number of reels different than 3"); }
           
 
            var offsets = Enum.GetValues(typeof(ESlotOffset)).Cast<ESlotOffset>();
+           /*Note: Each strip has already the added fornt end elements to make it look circular as per requirement.
+                   This is garanteed in the constructor of the Reel*/
            var stripList0=stripList[0].ToArray<ESlotSymbol>();
            var stripList1=stripList[1].ToArray<ESlotSymbol>();
            var stripList2=stripList[2].ToArray<ESlotSymbol>();

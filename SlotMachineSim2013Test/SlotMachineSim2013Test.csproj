@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.XML" />
@@ -55,6 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTestSlotMachineRunner.cs" />
     <Compile Include="UnitTestSlotMachine.cs" />
     <Compile Include="UnitTestSlotEngine.cs" />
     <Compile Include="UnitTestPayLine.cs" />
@@ -66,6 +68,12 @@
       <Project>{ae69ee8c-80ca-476d-9e80-4d953e7d75ce}</Project>
       <Name>SlotMachinesSim2013</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assessment_game.xml" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

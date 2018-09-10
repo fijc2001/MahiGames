@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="d9a6a291-4c60-48f3-8845-74dc00eb74fd"
   name="SlotMachineSimUML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -594,6 +594,1615 @@
         name="IPayLine"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="89d5c0ff-25d8-4b53-b98f-1e84d72c4c72"
+        name="Sequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="3e7f49aa-abd5-45e4-aca4-22d48f9f23bb" />
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="37e51963-5a15-4eed-9adb-0aa467a955bc"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="93551ffc-8b5c-4750-b16f-141e48e992d8"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1f527b63-45bd-4ed8-9ad0-58d0ae9621f1"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="df2761c8-39c7-471b-8529-bbc6d9f73253"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e2d7548e-c126-4028-9577-c0bd9e2ce1d2"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="df2761c8-39c7-471b-8529-bbc6d9f73253"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d18ab7f2-79c4-42db-b46f-c77a208e9893"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="93551ffc-8b5c-4750-b16f-141e48e992d8"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e93ad14f-af2d-4f1b-894d-8e47fc96911f"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="199bbb3e-6597-4fd7-b11d-395807199c08"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e2d7548e-c126-4028-9577-c0bd9e2ce1d2"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="93551ffc-8b5c-4750-b16f-141e48e992d8"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1f527b63-45bd-4ed8-9ad0-58d0ae9621f1"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="77afd6f8-56e1-4eeb-b0b1-709f9be2b313"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="93551ffc-8b5c-4750-b16f-141e48e992d8"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="199bbb3e-6597-4fd7-b11d-395807199c08"
+            name="SlotMachineRunner"
+            isActor="false"
+            lifelineDisplayName="SlotMachineRunner">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e93ad14f-af2d-4f1b-894d-8e47fc96911f"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="abd083c8-5626-4ede-8223-4984e9ba552b"
+            name="SlotMachineEngine"
+            isActor="false"
+            lifelineDisplayName="SlotMachineEngine" />
+          <lifeline
+            Id="93551ffc-8b5c-4750-b16f-141e48e992d8"
+            name="SlotMachine"
+            isActor="false"
+            lifelineDisplayName="SlotMachine">
+            <represents>
+              <propertyMoniker
+                Id="41799788-676c-41c3-9d30-fe0e06983ca8"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="df2761c8-39c7-471b-8529-bbc6d9f73253"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1f527b63-45bd-4ed8-9ad0-58d0ae9621f1"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="d8c6479e-ac41-47a9-8bd5-1167fed050eb"
+            name="Message1"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e93ad14f-af2d-4f1b-894d-8e47fc96911f"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e2d7548e-c126-4028-9577-c0bd9e2ce1d2"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="41799788-676c-41c3-9d30-fe0e06983ca8"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="9ef1e3bb-6d2a-496c-bb93-f382d6fcc2d2"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d18ab7f2-79c4-42db-b46f-c77a208e9893"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="77afd6f8-56e1-4eeb-b0b1-709f9be2b313"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="d7937d7e-9d25-4a03-b6f6-d4646c9843f7"
+        name="SequenceInstantiation"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="1009a0ad-d66a-4c82-a131-9e170d741e7c">
+            <body>Instantiation sequence and dependencies  for any SlotMachine object process building. This is applicable to the N Slotmachines where N is the[ number of instances] parameter passed through the command prompt</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="64e4b871-35e6-4601-83e1-d0e5fa0f8373"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="08d1b8a3-3673-47da-984c-43d5d8cdd931"
+                LastKnownName="A=List&lt;Reel&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1057b656-44da-4e00-9027-998538964958"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a0663234-5404-44f8-83ef-6fc924ba26a1"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1e172566-ed60-423f-aa3d-3374f91e3ef0"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a0663234-5404-44f8-83ef-6fc924ba26a1"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a530bd39-1549-4b74-8b7a-a5c95229a52f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="08d1b8a3-3673-47da-984c-43d5d8cdd931"
+                LastKnownName="A=List&lt;Reel&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dab8b150-c8ea-4afb-8399-f63ce7d785d8"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="992fff3a-0778-4744-be03-0c52b8c9212e"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1e172566-ed60-423f-aa3d-3374f91e3ef0"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="08d1b8a3-3673-47da-984c-43d5d8cdd931"
+                LastKnownName="A=List&lt;Reel&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="7ec9530d-8770-433b-93b5-fa000777522a"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="b7e99bd5-bd2d-4fbb-b076-2ec9f0e16de8"
+                LastKnownName="B=List&lt;PayLine&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="712c34a1-e8d6-4c13-bf15-f1f6eab5006a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1953ef32-d766-4b44-b0a8-16a3664c92cd"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dab2c998-b474-44af-88bf-7d0de2fde0d0"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1953ef32-d766-4b44-b0a8-16a3664c92cd"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="90c72e5b-901c-46f4-9d47-1485eca9428a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b7e99bd5-bd2d-4fbb-b076-2ec9f0e16de8"
+                LastKnownName="B=List&lt;PayLine&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="47fa7d1f-8a7f-49b3-88fc-b69a8cc54c5d"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="992fff3a-0778-4744-be03-0c52b8c9212e"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dab2c998-b474-44af-88bf-7d0de2fde0d0"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="b7e99bd5-bd2d-4fbb-b076-2ec9f0e16de8"
+                LastKnownName="B=List&lt;PayLine&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e96f8d61-6de1-46c9-b84e-2cf900fd3649"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="584de0ee-9997-4aa4-8a28-602e8673df5d"
+                LastKnownName="C=List&lt;PayMatchAmount"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a9060dd2-a30f-43f8-b1bf-c93ae7c0a4a6"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e51cc2a5-a4cd-4b7b-8aa7-a79a73fd883f"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2bbf8854-beba-46d2-92c0-36ed8dd56d30"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e51cc2a5-a4cd-4b7b-8aa7-a79a73fd883f"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8963b2d7-097a-4155-8a9a-40a0007b1b1d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="584de0ee-9997-4aa4-8a28-602e8673df5d"
+                LastKnownName="C=List&lt;PayMatchAmount"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="501aa243-138a-4d89-9a9d-f6c5a72ed4c2"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="992fff3a-0778-4744-be03-0c52b8c9212e"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2bbf8854-beba-46d2-92c0-36ed8dd56d30"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="584de0ee-9997-4aa4-8a28-602e8673df5d"
+                LastKnownName="C=List&lt;PayMatchAmount"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b320e465-50c1-4f71-97b3-cbfbda6bca1b"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ef58fc0d-875f-461d-92e0-47bf5008af87"
+                LastKnownName="D=SlotEngine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fb87e5aa-bc55-4b29-aab7-9bbb1aa753f0"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6809064b-20f4-41dd-a4ff-343cdfa623b5"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a691a9d4-fef7-4ad1-998e-1c1bb50ae8c4"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6809064b-20f4-41dd-a4ff-343cdfa623b5"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7546d74d-e6a6-4782-86f1-7bd905424b54"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ef58fc0d-875f-461d-92e0-47bf5008af87"
+                LastKnownName="D=SlotEngine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8f9b4538-9ad3-4e15-a71c-4d30f50d969d"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="992fff3a-0778-4744-be03-0c52b8c9212e"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a691a9d4-fef7-4ad1-998e-1c1bb50ae8c4"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="ef58fc0d-875f-461d-92e0-47bf5008af87"
+                LastKnownName="D=SlotEngine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="dfb68b5a-3e61-4fe5-b8f5-392a9a6fe55b"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e9203745-ac0d-451a-af4e-9addf7d44607"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3bf5ecbf-9846-4b6c-98e0-cad6906504b7"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f4df8b04-446c-44d9-be9e-928088606d9e"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1616c709-b1b1-467e-8dde-b8ee990a3457"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f4df8b04-446c-44d9-be9e-928088606d9e"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="74a0d67e-cd75-4e04-9188-64532c9a345f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e9203745-ac0d-451a-af4e-9addf7d44607"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6d451cb4-5a41-42d2-bcb2-da8c20321983"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="992fff3a-0778-4744-be03-0c52b8c9212e"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1616c709-b1b1-467e-8dde-b8ee990a3457"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="e9203745-ac0d-451a-af4e-9addf7d44607"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3bf5ecbf-9846-4b6c-98e0-cad6906504b7"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c7c4893a-1b41-48ab-a69a-72c3c05b67d0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e9203745-ac0d-451a-af4e-9addf7d44607"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a9060dd2-a30f-43f8-b1bf-c93ae7c0a4a6"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="01aad174-9da3-4e3f-8a8c-18eac8de3c9c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="584de0ee-9997-4aa4-8a28-602e8673df5d"
+                LastKnownName="C=List&lt;PayMatchAmount"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="712c34a1-e8d6-4c13-bf15-f1f6eab5006a"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0d982704-2f06-4ff3-b30e-e918741afedd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b7e99bd5-bd2d-4fbb-b076-2ec9f0e16de8"
+                LastKnownName="B=List&lt;PayLine&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fb87e5aa-bc55-4b29-aab7-9bbb1aa753f0"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="159a42b9-8977-4d84-87b8-8b8cf1cebfb4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ef58fc0d-875f-461d-92e0-47bf5008af87"
+                LastKnownName="D=SlotEngine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1057b656-44da-4e00-9027-998538964958"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="432d9423-73d7-4bec-b815-be87fc830dde"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="08d1b8a3-3673-47da-984c-43d5d8cdd931"
+                LastKnownName="A=List&lt;Reel&gt;"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="992fff3a-0778-4744-be03-0c52b8c9212e"
+            name="SlotMachineRunner"
+            isActor="false"
+            lifelineDisplayName="SlotMachineRunner">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dab8b150-c8ea-4afb-8399-f63ce7d785d8"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="47fa7d1f-8a7f-49b3-88fc-b69a8cc54c5d"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="501aa243-138a-4d89-9a9d-f6c5a72ed4c2"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8f9b4538-9ad3-4e15-a71c-4d30f50d969d"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6d451cb4-5a41-42d2-bcb2-da8c20321983"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="08d1b8a3-3673-47da-984c-43d5d8cdd931"
+            name="A=List&lt;Reel&gt;"
+            isActor="false"
+            lifelineDisplayName="A=List&lt;Reel&gt;">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a0663234-5404-44f8-83ef-6fc924ba26a1"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1057b656-44da-4e00-9027-998538964958"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="b7e99bd5-bd2d-4fbb-b076-2ec9f0e16de8"
+            name="B=List&lt;PayLine&gt;"
+            isActor="false"
+            lifelineDisplayName="B=List&lt;PayLine&gt;">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="1953ef32-d766-4b44-b0a8-16a3664c92cd"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="712c34a1-e8d6-4c13-bf15-f1f6eab5006a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="584de0ee-9997-4aa4-8a28-602e8673df5d"
+            name="C=List&lt;PayMatchAmount"
+            isActor="false"
+            lifelineDisplayName="C=List&lt;PayMatchAmount">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e51cc2a5-a4cd-4b7b-8aa7-a79a73fd883f"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a9060dd2-a30f-43f8-b1bf-c93ae7c0a4a6"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ef58fc0d-875f-461d-92e0-47bf5008af87"
+            name="D=SlotEngine"
+            isActor="false"
+            lifelineDisplayName="D=SlotEngine">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="6809064b-20f4-41dd-a4ff-343cdfa623b5"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fb87e5aa-bc55-4b29-aab7-9bbb1aa753f0"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e9203745-ac0d-451a-af4e-9addf7d44607"
+            name="SlotMachine"
+            isActor="false"
+            lifelineDisplayName="SlotMachine">
+            <represents>
+              <propertyMoniker
+                Id="7047c551-257f-4efc-b1fa-b8790708bfb3"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f4df8b04-446c-44d9-be9e-928088606d9e"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3bf5ecbf-9846-4b6c-98e0-cad6906504b7"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="eba1cc20-c283-447c-acf4-e261eef70fa4"
+            name="Instantiate"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dab8b150-c8ea-4afb-8399-f63ce7d785d8"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1e172566-ed60-423f-aa3d-3374f91e3ef0"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cad9e6d4-8fe5-450e-92bf-858a47a72104"
+            name="Instantiate"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="47fa7d1f-8a7f-49b3-88fc-b69a8cc54c5d"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dab2c998-b474-44af-88bf-7d0de2fde0d0"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a8b380fd-c76b-4449-be97-f20972042655"
+            name="Instantiate"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="501aa243-138a-4d89-9a9d-f6c5a72ed4c2"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2bbf8854-beba-46d2-92c0-36ed8dd56d30"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="532d7aa1-a9d9-440f-a434-cd839e5bff67"
+            name="Instantiate passing B  and C as  reference"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8f9b4538-9ad3-4e15-a71c-4d30f50d969d"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a691a9d4-fef7-4ad1-998e-1c1bb50ae8c4"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="739a3ba1-8e78-46bb-ae91-3b3a0a51a4f7"
+            name="Instantiate passing A and D as reference "
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6d451cb4-5a41-42d2-bcb2-da8c20321983"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1616c709-b1b1-467e-8dde-b8ee990a3457"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="7047c551-257f-4efc-b1fa-b8790708bfb3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="9ef1e3bb-6d2a-496c-bb93-f382d6fcc2d2"
+                LastKnownName="SlotMachine"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a530bd39-1549-4b74-8b7a-a5c95229a52f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="432d9423-73d7-4bec-b815-be87fc830dde"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="90c72e5b-901c-46f4-9d47-1485eca9428a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0d982704-2f06-4ff3-b30e-e918741afedd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7546d74d-e6a6-4782-86f1-7bd905424b54"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="159a42b9-8977-4d84-87b8-8b8cf1cebfb4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8963b2d7-097a-4155-8a9a-40a0007b1b1d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="01aad174-9da3-4e3f-8a8c-18eac8de3c9c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="74a0d67e-cd75-4e04-9188-64532c9a345f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c7c4893a-1b41-48ab-a69a-72c3c05b67d0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="4a1052fa-06fb-48a2-ac55-302ec3387c05"
+        name="SequenceSpinManyTimesMethod"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="1a8ad734-0d1f-4e89-a620-1ab8a83642c1">
+            <body>........</body>
+          </comment>
+          <comment
+            Id="46869fc6-6cfc-468b-acb1-4f6ef6f4b799">
+            <body>Asyncronyc  behavior of method [ SlotMachineRunner. SpinManyTimes] N threads are spawned and in each thread M repetitions of the [ SlotMachine.Spin] method .M is the [number of iterations] and N the number of [SlotMachine instances] both parameters passed through the command prompt</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="376113f4-18b1-4994-933e-2abea43a809e"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8f1f5db0-40af-4ea8-a41b-df26e723be1b"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b57e670f-f6a5-4243-9cc4-7038e3ff1e78"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bb24d08b-0eca-438d-81d9-5aaa774f026d"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ef2d297b-d8fb-4139-a208-62554d550f6b"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="072b606c-52b4-4927-a8a0-df365687a41c"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="26091f32-a2ab-4670-8978-678eb67ab3ec"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="330a8d7e-7285-40fb-87f0-8f89814a3248"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2c5a6f61-bca3-4b1f-9073-43362285f953"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5de505c7-215d-4977-90fd-fd51f863b474"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ef0e9d18-2557-4f63-85ba-a428682217e0"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bb24d08b-0eca-438d-81d9-5aaa774f026d"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6f48e0f0-bfa5-44ed-b520-b60cde216e83"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ef2d297b-d8fb-4139-a208-62554d550f6b"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="96528db6-68c3-4bfa-960c-434c1a5a8f95"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="10defe18-2a57-48a6-a4d6-23716c3b2ac8"
+                LastKnownName="SlotMachine 1"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3e3c5157-1e07-40ab-978c-39323cd58e6a"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b93c6e13-8956-4ffa-945a-0b9e0d02893f"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="72936c60-21cd-440a-ab17-3cb99b0d7ef5"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="aecf72fc-4926-4a6f-93ba-6cd430d9d4d4"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b93c6e13-8956-4ffa-945a-0b9e0d02893f"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fb28de41-f180-4918-bd88-05e9bfadc12f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10defe18-2a57-48a6-a4d6-23716c3b2ac8"
+                LastKnownName="SlotMachine 1"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="072b606c-52b4-4927-a8a0-df365687a41c"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="72936c60-21cd-440a-ab17-3cb99b0d7ef5"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="10defe18-2a57-48a6-a4d6-23716c3b2ac8"
+                LastKnownName="SlotMachine 1"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="26091f32-a2ab-4670-8978-678eb67ab3ec"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="aecf72fc-4926-4a6f-93ba-6cd430d9d4d4"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="10defe18-2a57-48a6-a4d6-23716c3b2ac8"
+                LastKnownName="SlotMachine 1"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3e3c5157-1e07-40ab-978c-39323cd58e6a"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e571534a-71c4-4abc-af7d-fe9815f17d99"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10defe18-2a57-48a6-a4d6-23716c3b2ac8"
+                LastKnownName="SlotMachine 1"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bf87f7d4-cadf-4ec7-8e2c-e3afd81a71f4"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="7be3e569-7fca-4658-9e82-1021e78d700d"
+                LastKnownName="SlotMachine 2"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b2e25494-d908-422e-a851-52f561c714a7"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3970930d-3477-4146-996a-d44e52e53fa7"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="83a978cb-9338-4c15-814f-d3e2981b6985"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bf2eacba-a36f-46a4-b09e-e5eca6f3cc57"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3970930d-3477-4146-996a-d44e52e53fa7"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b9aff402-9199-4c51-8750-8bf86c10e67f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7be3e569-7fca-4658-9e82-1021e78d700d"
+                LastKnownName="SlotMachine 2"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="330a8d7e-7285-40fb-87f0-8f89814a3248"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="83a978cb-9338-4c15-814f-d3e2981b6985"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="7be3e569-7fca-4658-9e82-1021e78d700d"
+                LastKnownName="SlotMachine 2"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bf2eacba-a36f-46a4-b09e-e5eca6f3cc57"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="7be3e569-7fca-4658-9e82-1021e78d700d"
+                LastKnownName="SlotMachine 2"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2c5a6f61-bca3-4b1f-9073-43362285f953"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b2e25494-d908-422e-a851-52f561c714a7"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="62e3aa46-cca4-4d5e-b059-2969f3d3b7c1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7be3e569-7fca-4658-9e82-1021e78d700d"
+                LastKnownName="SlotMachine 2"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bb6817da-8d93-4a84-9bef-5f23caed0347"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="74544038-724d-4d46-831d-f2f9e8840bcb"
+                LastKnownName="SlotMachine N"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="21b60cda-e56d-4365-ad83-4bfe52d9ce8d"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="061face8-015e-4a89-b7ac-da2a4477bac8"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dfb3685d-811c-4b34-a640-055e30677453"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9177d79b-e2f6-4038-9f3e-8f61e15445f9"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="061face8-015e-4a89-b7ac-da2a4477bac8"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6195b109-8b89-451b-9901-39e261c27cc9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="74544038-724d-4d46-831d-f2f9e8840bcb"
+                LastKnownName="SlotMachine N"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5de505c7-215d-4977-90fd-fd51f863b474"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dfb3685d-811c-4b34-a640-055e30677453"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="74544038-724d-4d46-831d-f2f9e8840bcb"
+                LastKnownName="SlotMachine N"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9177d79b-e2f6-4038-9f3e-8f61e15445f9"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="74544038-724d-4d46-831d-f2f9e8840bcb"
+                LastKnownName="SlotMachine N"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ef0e9d18-2557-4f63-85ba-a428682217e0"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="21b60cda-e56d-4365-ad83-4bfe52d9ce8d"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b4efd77c-e4b4-4de9-8eb3-e73a09d3a6b4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="74544038-724d-4d46-831d-f2f9e8840bcb"
+                LastKnownName="SlotMachine N"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b57e670f-f6a5-4243-9cc4-7038e3ff1e78"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="67cbbb67-f234-444f-b0a5-cdde5f1a5ce5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SlotMachineSimUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+                LastKnownName="SlotMachineRunner"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="52b2cfbe-8ef3-4c92-8c53-444a13b44bf8"
+            name="SlotMachineRunner"
+            isActor="false"
+            lifelineDisplayName="SlotMachineRunner">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="376113f4-18b1-4994-933e-2abea43a809e"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bb24d08b-0eca-438d-81d9-5aaa774f026d"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b57e670f-f6a5-4243-9cc4-7038e3ff1e78"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="10defe18-2a57-48a6-a4d6-23716c3b2ac8"
+            name="SlotMachine 1"
+            isActor="false"
+            lifelineDisplayName="SlotMachine 1">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="b93c6e13-8956-4ffa-945a-0b9e0d02893f"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3e3c5157-1e07-40ab-978c-39323cd58e6a"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="7be3e569-7fca-4658-9e82-1021e78d700d"
+            name="SlotMachine 2"
+            isActor="false"
+            lifelineDisplayName="SlotMachine 2">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3970930d-3477-4146-996a-d44e52e53fa7"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b2e25494-d908-422e-a851-52f561c714a7"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="74544038-724d-4d46-831d-f2f9e8840bcb"
+            name="SlotMachine N"
+            isActor="false"
+            lifelineDisplayName="SlotMachine N">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="061face8-015e-4a89-b7ac-da2a4477bac8"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="21b60cda-e56d-4365-ad83-4bfe52d9ce8d"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="18d0364a-e819-428c-93b1-1c62fbbde3b1"
+            name="SpinManyTimes"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="376113f4-18b1-4994-933e-2abea43a809e"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ef2d297b-d8fb-4139-a208-62554d550f6b"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d7d6e476-0b78-45a5-8331-6835d0c3e99a"
+            name="SpinInstanceManyTimesAsync(M)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="072b606c-52b4-4927-a8a0-df365687a41c"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="72936c60-21cd-440a-ab17-3cb99b0d7ef5"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="754f972b-9e37-49ea-8363-2a6f1fcd134a"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aecf72fc-4926-4a6f-93ba-6cd430d9d4d4"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="26091f32-a2ab-4670-8978-678eb67ab3ec"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4da12122-bb5f-4d39-9ae9-f01a68625c6b"
+            name="SpinInstanceManyTimesAsync(M)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="330a8d7e-7285-40fb-87f0-8f89814a3248"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="83a978cb-9338-4c15-814f-d3e2981b6985"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d2563dd6-8448-4bcc-90ba-53534fa30799"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bf2eacba-a36f-46a4-b09e-e5eca6f3cc57"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2c5a6f61-bca3-4b1f-9073-43362285f953"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2d1174a1-befb-4a52-a456-332acfec7112"
+            name="SpinInstanceManyTimesAsync(M)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5de505c7-215d-4977-90fd-fd51f863b474"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dfb3685d-811c-4b34-a640-055e30677453"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="675fbf8d-62a2-4e0c-b186-7f0a515ebb67"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9177d79b-e2f6-4038-9f3e-8f61e15445f9"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ef0e9d18-2557-4f63-85ba-a428682217e0"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="SlotMachineSimUML.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6f48e0f0-bfa5-44ed-b520-b60cde216e83"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="67cbbb67-f234-444f-b0a5-cdde5f1a5ce5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fb28de41-f180-4918-bd88-05e9bfadc12f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e571534a-71c4-4abc-af7d-fe9815f17d99"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b9aff402-9199-4c51-8750-8bf86c10e67f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="62e3aa46-cca4-4d5e-b059-2969f3d3b7c1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6195b109-8b89-451b-9901-39e261c27cc9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b4efd77c-e4b4-4de9-8eb3-e73a09d3a6b4"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -42,7 +42,7 @@ namespace SlotMachinesSim2013
             
 
             
-            Console.WriteLine("simulating of {0} slot machines with {1} iterations each",slotMachineTotal,iterationsTotal);
+            Console.WriteLine("***Simulating of {0} slot machines with {1} iterations each***",slotMachineTotal,iterationsTotal);
             SlotMachineRunner runner = new SlotMachineRunner("assessment_game.xml", iterationsTotal, slotMachineTotal);
             var result=runner.SpinManyTimes();
 
@@ -54,7 +54,7 @@ namespace SlotMachinesSim2013
             {
                 Console.WriteLine("Total HitRate={0}%", (result.HitTotal * 100.00) / result.SpinTotal);
             }
-            Console.WriteLine("spinAllCombinations test:");
+            Console.WriteLine("***Spining All possible Combinations to determine hit rate***");
             runner = new SlotMachineRunner("assessment_game.xml", iterationsTotal, slotMachineTotal);
             result=runner.SpinAllCombinations();
             Console.WriteLine("Total PayoffAmount={0}",result.PayoffAmount);

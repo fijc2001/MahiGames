@@ -29,6 +29,20 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLClassDiagram.classdiagram</DependentUpon>
     </Content>
+    <Content Include="UMLSequenceDiagramInstantiation.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramInstantiation.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramInstantiation.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramSpinManyTimesMethod.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramSpinManyTimesMethod.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramSpinManyTimesMethod.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\SlotMachineSimUML.uml">
       <SubType>Content</SubType>
