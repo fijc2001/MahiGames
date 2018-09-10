@@ -16,7 +16,7 @@ namespace SlotMachinesSim2013
         Fisrt=0, Second, Third
     }
 
-  public  class SlotSymbolOffset
+  public  struct SlotSymbolOffset
     {
         private ESlotOffset offset ;
         private ESlotSymbol symbol;
